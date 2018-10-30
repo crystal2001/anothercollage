@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Another Collage</title>
+
+	<style type="text/css">
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: lightgrey;
+		}
+
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			background: lightgrey;
+			width: 948px;
+			height: 721px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+				"p1 p1 p2"
+				"p4 p3 p2"
+				"p4 p5 p5";
+			grid-gap: 5px;
+			padding: 10px;
+			}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(https://thumbs.gfycat.com/UnawareObviousGalapagosmockingbird-size_restricted.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#photo2 {
+			grid-area: p2;
+			background: url(http://www.todaytvseries2.com/images/tvseriesinfo/The-Magicians/screencaps/screencaps6.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo3 {
+			grid-area: p3;
+			background: url(https://media1.tenor.com/images/7b1dbeb511ccddb5934ee9b1909e0536/tenor.gif?itemid=7824950);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area: p4;
+			background: url(http://images6.fanpop.com/image/photos/39800000/Julia-Wicker-the-magicians-39862509-1200-1800.jpg);
+			background-size: cover;
+			background-position: right;
+		}
+
+		#photo5 {
+			grid-area: p5;
+			background: url(https://data.whicdn.com/images/286359988/original.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.item {
+			min-height: 100px;
+			min-width: 100px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="item" id="photo1">
+		</div>
+
+	<div class="item" id="photo2">
+		</div>
+
+	<div class="item" id="photo3">
+		</div>
+
+	<div class="item" id="photo4">
+		</div>
+
+	<div class="item" id="photo5">
+		</div>
+</div>
+
+</body>
+</html>
